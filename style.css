@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color:  #E3E6E6;
+}
+
+.nav-container{
+    background-color: #0f1111;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.border{
+    border: 2px solid transparent;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+.border:hover{
+    border: 2px solid #fff;
+}
+
+.logo img{
+    width: 100px;
+    height: 35px;
+}
+
+.address-dalivery{
+    color: white;
+    font-size: 0.85rem;
+    display: flex;
+   align-items: flex-end;
+}
+
+.address-dalivery i{
+    margin-right: 5px;
+}
+
+.addr-fist{
+    font-size: 0.75rem;
+    color: #cccccc;
+}
+
+.select-option{
+    background-color:rgb(225, 225, 225) ;
+    border: none;
+    border-top-left-radius:3px ;
+    border-bottom-left-radius:3px ;
+    width: 80px;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.search-input{
+    width:800px;
+    height: 40px;
+    font-size: 0.85rem;
+    outline: none;
+    border: none;
+}
+
+.search-input:focus{
+   border: 2px solid rgb(255, 191, 0);
+}
+
+.search-input::placeholder{
+  padding: 0 10px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.search-icon{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 60px;
+    height: 40px; 
+    background-color: rgb(234, 168, 2);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.account p, .order p{
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.order p:first-child{
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.account p:first-child{
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.cart p{
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.cart p i{
+  font-size: 30px;
+}
+
+#nav-menu{
+    background-color:#232F3E;
+    height: 40px;
+    width: 100%;
+}
+
+.manu-bar{
+    height: 40px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.manu-bar a{
+    color: #fff;
+    font-weight: 500;
+}
+
+.manu-bar h5{
+   margin-left: 10px;
+}
+
+/* slider home background image area */
+
+#sliderBg{
+    background-image: url('images/amazon-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.shopLink{
+    background-color: #fff;
+    width: 1350px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    color: #0f1111;
+    margin-bottom: 30px;
+    font-size: 0.85rem;
+}
+
+.shopLink a{
+    color: #007185;
+}
+
+/* start product here */
+
+#productCta{
+    width: 100%;
+    height: auto;
+    background-color: #E3E6E6;  
+}
+
+.item{
+    width: 380px;
+    height: 430px;
+    background: #fff;
+    padding:20px;
+}
+
+.item h2{
+    color: #0f1111;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.product-image img{
+    width: 100%;
+    height: 330px;
+    padding: 10px 0px;
+    clear: both;
+}
+
+.seeMore a{
+    color: #007185;
+    font-size: 0.85rem;
+}
+
+.productList{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px 0;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* Start Horizantal Product Section */
+
+
+
+.horizantalContainer h2{
+ padding: 10px 0;
+ color: #0f1111;
+ text-align: left;
+}
+
+.horizantalContainer{
+    padding: 10px 20px;
+    max-width: 1610px;
+    height: 290px;
+    background-color: #ffffff;
+    margin: 20px auto;
+   }
+
+   .horizantalItems{
+    overflow: hidden;
+    white-space: nowrap;
+   }
+
+   .horizantalContainer:hover .horizantalItems{
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+   }
+
+   .horizantalItems img{
+    width: auto;
+    /* min-width: 100px;
+    max-width: 200px; */
+    height: 200px;
+    margin-right: 30px;
+    cursor: pointer;
+
+   }
+
+
+   /* inner box area */
+
+   /* #innerElement{
+    background-color: #37475A;
+   } */
+
+   .innerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+   }
+.outerBox{
+    background-color: #ffffff;
+    max-width: 380px;
+    min-height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0px;
+    padding: 10px;
+}
+
+.outerBox h2{
+    width: 100%;
+    color: #0f1111;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: left !important;
+    padding: 0px 0px 0px 10px;
+}
+
+.outerBox a{
+    width: 100%;
+    color: #007185;
+    font-weight: 500;
+    font-size: 0.75rem;
+    text-align: left !important;
+    padding: 0px 0px 0px 10px;
+    transition: all .5s ease-in-out;
+}
+
+.outerBox a:hover{
+    width: 100%;
+    color: rgb(209, 133, 2);
+    transition: all .5s ease-in-out;
+}
+
+.innerBox{
+    min-width:165px ;
+    min-height: 170px;
+    padding: 10px;
+}
+
+.innerBox p{
+   font-size: 0.75rem;
+   text-transform: capitalize;
+   font-weight: 500;
+   color: #0f1111;
+}
+
+.innerBox img{
+    width: 160px;
+    height:130px ;
+}
+
+/* End Horizantal Product Section */
+
+#BackToTop{
+    background-color: #37475A;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    margin-top:20px ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BackToTop  h4 a{
+    padding: 20px;
+    color: #ffffff;
+    font-size:0.85rem ;
+}
+
+.footerSection{
+    background-color: #232F3E;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 50px 0;
+}
+
+.footerContent ul h4{
+   color: #ffffff;
+   font-size:1rem ;
+   margin: 10px 0;
+}
+
+.footerContent ul li a{
+    color: #dddddd;
+    font-size: 0.85rem ;
+ }
+
+ .footerContent ul li:hover a{
+    text-decoration: underline;
+ }
+
+ .footerContent ul li{
+   margin-top: 10px;
+ }
+
+#footerLogo{
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #3a4553;
+    background-color: #232F3E;
+}
+
+ .logoHere{
+    width: 115px;
+    height: 35px;
+    background-image: url(images/amazon-logo.png);
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    margin-right: 80px;
+ }
+
+ .bootomLogo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+ }
+
+ .lang, .currency, .country{
+    width: 160px;
+    height: 35px;
+    border: 1px solid #848688;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-right: 10px;
+ }
+
+ .lang select{
+    width: 100%;
+    background-color: transparent;
+    color: #cccccc;
+    border: none;
+    outline: none;  
+
+ }
+
+ .lang option{
+    padding: 10px 15px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #232F3E;
+    border: 1px solid #007185;
+    outline: none;  
+ }
+
+ #footerBranch{
+    width: 100%;
+    height: auto;
+    background-color: #131A22;
+ }
+
+ .branchContainer ul li a{
+    color: #999999;
+    font-size: 0.7rem;
+ }
+
+ .branchContainer ul li h5{
+    color: #dddddd;
+    font-size: 0.7rem;
+ }
+
+ .branchlink{
+    max-width: 1400px;
+    height: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+ }
+
+ .branchContainer ul li{
+    margin: 50px 50px 0 0;
+    line-height: 12px;
+ }
+
+ .branchContainer ul li:hover a{
+    text-decoration: underline;
+    
+ }
+
+ #bootomBar{
+    background-color: #131A22;
+    padding: 30px 0;
+ }
+
+ .privicyAndPolicy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .privicyAndPolicy li a{
+   color: #dddddd;
+   font-size: 0.75rem;
+   padding: 10px 15px;
+ }
+ .privicyAndPolicy li:hover a{
+    text-decoration: underline;
+  }
+
+ .privicyAndPolicy li:last-child{
+    color:#00c8ffb2;
+    font-size: 0.85rem;
+  }
+
+  .copyright p{
+    text-align: center;
+    color: #dddddd;
+    font-size: 0.75rem;
+    margin-top: 8px;
+  }
+
+  .bootomMenu{
+    width: 100%;
+    height: 100px;
+    display: inline;
+  }
+
